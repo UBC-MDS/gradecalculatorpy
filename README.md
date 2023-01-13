@@ -1,6 +1,6 @@
 # gradecalculatorpy
 
-A python package which helps calculate grades for a course.
+This python package can primarily calculate grades for a course along with the capabilities to allow user customize their own course information with self-defined course componenet names, update grades for different course components, and even understand how well the Final exam has to be to pass the course or achieve a certain level of grade in this course.
 
 ## Installation
 
