@@ -14,6 +14,14 @@ This package contains the following functions:
 - 
 - `calculate_grade`: <br>When all course components are presented, calculate the course overall grade based on information provided.
 
+## Suitability within Python Ecosystem
+
+This course grade calculator is unique as it provide an interactive way for user to input the course component information and update information as needed. With the `predict_final` function available, user can understand how well the Final exam has to be in order to pass the course or achieve a certain level of grade in this course, then adjust their Final review plan based on our calculation, to meet user's course expectation.
+
+The package `predict_final` function does not take any users' previous study or course information into account to calculatoin of the desired Final performance, only based on the current course component information inputted/updated. 
+
+There are othe course grade calculators in the Python ecosystem. Some of the examples can be found [here](https://pypi.org/project/grade/) and [here](https://pypi.org/project/grade-tracker/). While other packages focus on autograding without user interaction and they do not provide similar functions like `predict_final` function in this package.
+
 ## Installation
 
 ```bash
