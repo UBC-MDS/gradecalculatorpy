@@ -15,6 +15,7 @@ def predict_final(input_file, goal):
     Returns
     -------
     final_score_needed : double
+        The scores needed for the final assignment.
     
     Examples
     --------
