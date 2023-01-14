@@ -66,6 +66,8 @@ Before you submit a pull request, check that it meets these guidelines:
 1. The pull request should include additional tests if appropriate.
 2. If the pull request adds functionality, the docs should be updated.
 3. The pull request should work for all currently supported operating systems and versions of Python.
+4. For any features that you feel can improve our project, please open a github issue highlighting the feature and someone from our team will respond within 7-10 days, at which point you can create a pull request after forking our repo.
+
 
 ## Code of Conduct
 
