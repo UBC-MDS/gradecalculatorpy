@@ -30,7 +30,6 @@ $ pip install gradecalculatorpy
 
 ## Usage
 
-- TODO
 
 ## Contributing
 
