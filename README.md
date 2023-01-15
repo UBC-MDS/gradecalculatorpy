@@ -12,6 +12,8 @@ This package contains the following functions:
   
 - `predict_final`: <br>Calculate how well the Final exam has to be in order to pass the course or achieve a certain level of grade in this course <br>just before the final exam (for the scenario only when the final grade is missing), based on the provided other course component information.
 
+- `calculate_grade`: <br>When all course components are presented, calculate the course overall grade based on information provided.
+
 ## Suitability within Python Ecosystem
 
 This course grade calculator is unique as it provides an interactive way for users to input the course component information and update information as needed. With the `predict_final` function available, users can understand how well the final exam has to be in order to pass the course or achieve a certain level of grade in this course, then adjust their final review plans based on our calculation, to meet the course expectation.
