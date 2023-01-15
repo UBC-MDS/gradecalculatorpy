@@ -11,8 +11,6 @@ This package contains the following functions:
 - `update_grades`: <br>By loading a certain saved course information .csv file, allow user to update course component grade(s) <br> Then save the updated course information as a new .csv file to the specified file path.
   
 - `predict_final`: <br>Before the Final exam (for the scenario only the Final grade is missing), based on the provided other course component information, calculate how well the Final exam has to be in order to pass the course or achieve a certain level of grade in this course.
-  
-- `calculate_grade`: <br>When all course components are presented, calculate the course overall grade based on information provided.
 
 ## Suitability within Python Ecosystem
 
