@@ -1,18 +1,20 @@
 # gradecalculatorpy
 
-This python package can primarily calculate grades for a course along with the capabilities to allow users to customize their own course information with self-defined course component names, update grades for different course components, and even understand how well the final exam needs to be to pass the course or achieve a certain level of grade in this course.
+## Summary
+
+This python package calculates grades for a course. The package allows users to customize their own course information with self-defined course component names, to update grades for different course components, and even understand how well the final exam needs to be to pass the course or achieve a target final grade.
 
 ## Functions
 
 This package contains the following functions:
 
-- `construct_course`: <br>Allow users to input course component information (component name and corresponding weight) one by one.<br>Save the course information as a .csv file to the specified file path.<br>Note: any user self-defined course component name(s) can be accepted.
+- `construct_course`: Allow users to input the information for one course component (for example, assignment name and corresponding weight) one by one. Saves the course information as a .csv file to the specified file path. (Note: any user self-defined course component name(s) can be accepted)
 
-- `update_grades`: <br>Allow users to update course component grade(s) by loading a certain saved course information .csv file.<br> Then save the updated course information as a new .csv file to the specified file path.
+- `update_grades`: Allow users to update course component grade(s) by loading a certain saved course .csv file. The function can then save the updated course information as a new .csv file to the specified file path.
   
-- `predict_final`: <br>Calculate how well the Final exam has to be in order to pass the course or achieve a certain level of grade in this course <br>just before the final exam (for the scenario only when the final grade is missing), based on the provided other course component information.
+- `predict_final`: Calculate how well the final exam has to be in order to pass the course or achieve a certain grade just before the final exam (for the scenario only when the final grade is missing), based on the provided other course component information.
 
-- `calculate_grade`: <br>When all course components are presented, calculate the course overall grade based on information provided.
+- `calculate_grade`: When all course components are presented, calculate the course overall grade based on information provided. 
 
 ## Suitability within Python Ecosystem
 
