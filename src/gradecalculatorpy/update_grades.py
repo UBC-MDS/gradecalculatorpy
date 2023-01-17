@@ -18,7 +18,7 @@ def load_course(input_file):
     >>> load_course('DSCI100.csv')
     """
     
-    # unit tests: 
+    # exceptions: 
     # check if input file is a string 
     # check if input is a .csv file 
     # check if file exists in path 
@@ -48,7 +48,7 @@ def save_course_csv(updated_course_df, output_file):
     >>> save_course_csv(DSCI100_df, 'DSCI100.csv')
     """
     
-    # unit tests: 
+    # exceptions: 
     # check if input is dataframe 
     # check if dataframe has 3 columns with right names 
     # check if weights add up to 100 
@@ -81,19 +81,14 @@ def update_assignment_grade(input_file, assignment, grade):
     >>> update_assignment_grade('DSCI100.csv', 'Assignment 1', 95.0)
     """
     
-    # unit tests: 
+    # exceptions: 
     # check that assignment is a string 
     # check that assignment exists in the dataframe/matches 
     # check that grade is a number 
     
-    df = load_course(input_file)          # load_course() has its own unit tests 
-    row = df['Assignments'] == assignment    # find the row number with the assignment 
-    df.loc[row, 'Grades (%)'] = round(grade, 1)     # update grade and round 
+    df = load_course(input_file)          # load_course() has its own exceptions 
+    row = df['Components'] == assignment    # find the row number with the assignment 
+    df.loc[row, 'Grades (%)'] = round(grade, 2)     # update grade and round 
     save_course_csv(df, input_file)       # save course as .csv into original input_file location 
-                                          # save_course_csv() has its own unit tests 
+                                          # save_course_csv() has its own exceptions
     
-
-    
-#update_assignment_grade('dummycourse.csv', 'Assignment 1', 91)
-#update_assignment_grade('dummycourse.csv', 'Assignment 2', 95)
-#update_assignment_grade('dummycourse.csv', 'Assignment 3', 97)
