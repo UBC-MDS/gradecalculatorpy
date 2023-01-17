@@ -74,7 +74,6 @@ def update_assignment_grade(input_file, assignment, grade):
     
     Returns
     -------
-    
     None
     
     Examples
@@ -83,7 +82,18 @@ def update_assignment_grade(input_file, assignment, grade):
     """
     
     # unit tests: 
+    # check that assignment is a string 
+    # check that assignment exists in the dataframe/matches 
+    # check that grade is a number 
     
+    df = load_course(input_file)          # load_course() has its own unit tests 
+    row = df['Assignments'] == assignment    # find the row number with the assignment 
+    df.loc[row, 'Grades (%)'] = round(grade, 1)     # update grade and round 
+    save_course_csv(df, input_file)       # save course as .csv into original input_file location 
+                                          # save_course_csv() has its own unit tests 
     
-    df = load_course(input_file)
+
     
+#update_assignment_grade('dummycourse.csv', 'Assignment 1', 91)
+#update_assignment_grade('dummycourse.csv', 'Assignment 2', 95)
+#update_assignment_grade('dummycourse.csv', 'Assignment 3', 97)
