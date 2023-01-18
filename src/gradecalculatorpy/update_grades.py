@@ -91,4 +91,13 @@ def update_assignment_grade(input_file, assignment, grade):
     df.loc[row, 'Grades (%)'] = round(grade, 2)     # update grade and round 
     save_course_csv(df, input_file)       # save course as .csv into original input_file location 
                                           # save_course_csv() has its own exceptions
+        
+
+# unit tests 
+# try updating assignemnts with grades and checking afterwards 
+    # making sure it was only the one cell that got changed 
+# try updating assignments with NaN 
+# try passing bad value types 
+# try passing numbers out of range (not between 0-100) 
+# try passing existing value so nothing changes 
     
