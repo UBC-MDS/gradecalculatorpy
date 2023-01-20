@@ -3,9 +3,9 @@ import pandas as pd
 import math
 
 def test_calculate_grade():
-    file_path = '../src/gradecalculatorpy/dsci524_grades_all.csv'
-    # file_path = '../src/gradecalculatorpy/dsci524_grades_format.csv'
-    # file_path = '../src/gradecalculatorpy/dsci524_grades_miss.csv'
+    file_path = 'dsci524_grades_all.csv'
+    # file_path = 'dsci524_grades_format.csv'
+    # file_path = 'dsci524_grades_miss.csv'
 
     course_df = pd.read_csv(file_path, index_col=0)
     columns = course_df.columns
