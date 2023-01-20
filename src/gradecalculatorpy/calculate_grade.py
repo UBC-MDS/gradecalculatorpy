@@ -40,8 +40,8 @@ def calculate_grade(input_file_path):
         comp = row['Components']
         grade = row['Grades (%)'] 
         weight = row['Weights (%)']
-        print(grade)
-        print(weight)
+        # print(grade)
+        # print(weight)
 
         if  math.isnan(grade):
             return_msg = error_msg_missing_value + comp
