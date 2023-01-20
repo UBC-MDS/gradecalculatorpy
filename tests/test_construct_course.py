@@ -1,7 +1,7 @@
-from construct_course import construct_course
+from gradecalculatorpy.construct_course import construct_course
 
 def test_construct_course():
-    construct_course.construct_course('dsci524', '../src/gradecalculatorpy')
+    construct_course('test_construct_course', '../src/gradecalculatorpy')
     # Make sure generated .csv file has 3 columns
 
     # Make sure generated .csv has first column as "Components"
