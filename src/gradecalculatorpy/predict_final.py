@@ -41,6 +41,13 @@ def predict_final(input_file, goal):
         final_score_needed = error_msg
         return final_score_needed
     
+    # Check if there if more than one NA value in the 'Grades (%)' column
+    if course_info['Grades (%)'].isnull().sum() > 1:
+        error_msg = "Please update all your assignment scores except the final."
+        final_score_needed = error_msg
+        return final_score_needed
+    
+    
     
     
     
