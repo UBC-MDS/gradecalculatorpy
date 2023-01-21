@@ -2,7 +2,7 @@ from gradecalculatorpy.construct_course import construct_course
 import pandas as pd
 
 def test_construct_course():
-    file_path = 'dsci524.csv'
+    file_path = 'tests/dsci524.csv'
 
     course_df = pd.read_csv(file_path, index_col=0)
     columns = course_df.columns
