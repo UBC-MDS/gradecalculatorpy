@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+import math
 
 def predict_final(input_file, goal):
     """
@@ -15,9 +17,22 @@ def predict_final(input_file, goal):
     Returns
     -------
     final_score_needed : double
-        The scores needed for the final assignment.
+        The scores needed for the final assignment. 
+        Otherwise return warning message.
     
     Examples
     --------
-    >>> predict_final('DSCI100.csv', 90.0)
+    >>> predict_final('/DSCI100.csv', 90.0)
     """
+    # Set up input path
+    cwd = os.getcwd()
+    path = cwd + input_file
+    course_info = pd.read_csv(path, index_col=0)
+    
+    
+
+
+    
+
+    
+  
