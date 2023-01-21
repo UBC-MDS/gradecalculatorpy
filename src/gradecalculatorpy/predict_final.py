@@ -29,6 +29,12 @@ def predict_final(input_file, goal):
     path = cwd + input_file
     course_info = pd.read_csv(path, index_col=0)
     
+    # Check if all assignment weight sum up to 100%
+    if course_info['Weights (%)'].sum() != 100:
+        error_msg = "Your total assignment weights are not summing up to 100%! Please update all your assignments."
+        final_score_needed = error_msg
+        return final_score_needed
+    
     
 
 
