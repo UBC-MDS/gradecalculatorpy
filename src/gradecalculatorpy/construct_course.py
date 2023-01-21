@@ -31,7 +31,7 @@ def construct_course(course_name, output_file_path):
 
     Examples
     --------
-    >>> construct_course()
+    >>> construct_course('dsci524', '/')
     """
     
     course_total_weight = 0
