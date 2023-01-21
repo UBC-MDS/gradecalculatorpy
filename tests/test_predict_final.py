@@ -1,4 +1,4 @@
-from gradecalculatorpy.update_grades import predict_final
+from gradecalculatorpy.predict_final import predict_final
 import pandas as pd
 import math
 
