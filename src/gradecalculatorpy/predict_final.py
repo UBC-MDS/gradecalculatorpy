@@ -47,7 +47,10 @@ def predict_final(input_file, goal):
         final_score_needed = error_msg
         return final_score_needed
     
-    
+    # Calculate final_score_needed with given goal
+    total_scores_except_final = (course_info['Grades (%)'].iloc[:-1] * course_info['Weights (%)'].iloc[:-1]).sum()
+    final_score_needed = round((goal*100 - total_scores_except_final)/course_info['Weights (%)'].iloc[-1], 1)
+    return final_score_needed
     
     
     
