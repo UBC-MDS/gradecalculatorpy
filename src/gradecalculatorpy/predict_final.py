@@ -35,6 +35,14 @@ def predict_final(input_file, goal):
         final_score_needed = error_msg
         return final_score_needed
     
+    # Check if final score (in the last row) is NA
+    if not math.isnan(course_info['Grades (%)'].iloc[-1]):
+        error_msg = "Your final assignment score is already updated. Please directly use calculate_grade()."
+        final_score_needed = error_msg
+        return final_score_needed
+    
+    
+    
     
 
 
