@@ -3,6 +3,8 @@ import pandas as pd
 import math
 
 def test_calculate_grade():
+    '''Test that input file format meet the correctly and call calculate_grade() to return the desired course grade msg'''
+
     file_path = 'tests/dsci524_grades_all.csv'
     # file_path = 'dsci524_grades_format.csv'
     # file_path = 'dsci524_grades_miss.csv'
@@ -33,5 +35,7 @@ def test_calculate_grade():
 
         # Make sure generated .csv has third column "Grades (%)" with all values with 2 decimals
         assert len(str(grade).rsplit('.')[-1]) == 2, "Course component grades should be with 2 decimals for " + comp
+
+    assert calculate_grade(file_path) == 'Course garde is 86.5%', "Calculation of the calculation is incorrect"
 
     print("All test passed!")
