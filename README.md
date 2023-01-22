@@ -32,6 +32,9 @@ $ pip install gradecalculatorpy
 
 ## Usage
 
+## Acknowledging the use of OS
+
+Since Windows and Mac systems have different file path naming style and we run all our pytest successfully on Mac. Therefore, we highly recommend the TA grading this assignment using Mac.
 
 ## Contributing
 
