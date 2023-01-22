@@ -34,4 +34,6 @@ def test_calculate_grade():
         # Make sure generated .csv has third column "Grades (%)" with all values with 2 decimals
         assert len(str(grade).rsplit('.')[-1]) == 2, "Course component grades should be with 2 decimals for " + comp
 
+    assert calculate_grade(file_path) == 'Course garde is 86.5%', "Calculation of the calculation is incorrect"
+
     print("All test passed!")
