@@ -32,6 +32,12 @@ There are other course grade calculators in the Python ecosystem. Some of the ex
 $ pip install gradecalculatorpy
 ```
 
+## Usage
+
+## Acknowledging the use of OS
+
+Since Windows and Mac systems have different file path naming style and we run all our pytest successfully on Mac. Therefore, we highly recommend the TA grading this assignment using Mac.
+
 ## Contributing
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
