@@ -11,6 +11,8 @@ This python package calculates grades for a course. The package allows users to 
 This package contains the following functions:
 
 - `construct_course`: Allow users to input the information for one course component (for example, assignment name and corresponding weight) one by one. Saves the course information as a .csv file to the specified file path. (Note: any user self-defined course component name(s) can be accepted)
+    - **Note**: Since this function accepts user interaction input when calling the function, developer team had not yet found a way to pass the function unit test through *pytest*.<br>
+    The unit test scenarios covered in the `test_construct_course()` is based on the assumption that the input .csv file is scuuessfully generated through a local testing by calling `construct_course('dsci524', '/')` for example
 
 - `update_grades`: Allow users to update course component grade(s) by loading a certain saved course .csv file. The function can then save the updated course information as a new .csv file to the specified file path.
   
