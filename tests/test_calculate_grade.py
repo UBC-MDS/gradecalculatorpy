@@ -6,6 +6,7 @@ def test_calculate_grade():
     '''Test that input file format meet the correctly and call calculate_grade() to return the desired course grade msg'''
 
     file_path = '/tests/dsci524_grades_all.csv'
+    
     # file_path = '/dsci524_grades_format.csv'
     # file_path = '/dsci524_grades_miss.csv'
 

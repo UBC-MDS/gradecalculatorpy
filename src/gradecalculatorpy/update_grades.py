@@ -18,14 +18,6 @@ def load_course(input_file):
     >>> load_course('DSCI100.csv')
     """
     
-    # exceptions: 
-    # check if input file is a string 
-    # check if input is a .csv file 
-    # check if file exists in path 
-    # check dataframe has 3 columns with right names 
-    # check that weights add up to 100 
-    # check if final output is dataframe 
-    
     df = pd.read_csv(input_file, index_col=0)
     return df
     
@@ -47,15 +39,6 @@ def save_course_csv(updated_course_df, output_file):
     --------
     >>> save_course_csv(DSCI100_df, 'DSCI100.csv')
     """
-    
-    # exceptions: 
-    # check if input is dataframe 
-    # check if dataframe has 3 columns with right names 
-    # check if weights add up to 100 
-    # check if output_file is string 
-    # check if output_file is .csv name 
-    # check if path/directory exists 
-    # check if saved correctly afterwards 
     
     updated_course_df.to_csv(output_file)
     return 
@@ -81,23 +64,10 @@ def update_assignment_grade(input_file, assignment, grade):
     >>> update_assignment_grade('DSCI100.csv', 'Assignment 1', 95.0)
     """
     
-    # exceptions: 
-    # check that assignment is a string 
-    # check that assignment exists in the dataframe/matches 
-    # check that grade is a number 
-    
     df = load_course(input_file)          # load_course() has its own exceptions 
     row = df['Components'] == assignment    # find the row number with the assignment 
     df.loc[row, 'Grades (%)'] = round(grade, 2)     # update grade and round 
     save_course_csv(df, input_file)       # save course as .csv into original input_file location 
                                           # save_course_csv() has its own exceptions
         
-
-# unit tests 
-# try updating assignemnts with grades and checking afterwards 
-    # making sure it was only the one cell that got changed 
-# try updating assignments with NaN 
-# try passing bad value types 
-# try passing numbers out of range (not between 0-100) 
-# try passing existing value so nothing changes 
     
