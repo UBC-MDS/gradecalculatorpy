@@ -24,8 +24,8 @@ def calculate_grade(input_file_path):
     >>> calculate_grade('/DSCI524.csv')
     """
     cwd = os.getcwd()
-    path = cwd + input_file_path
-    course_info = pd.read_csv(input_file_path, index_col=0)
+    path = cwd + '/' + input_file_path
+    course_info = pd.read_csv(path, index_col=0)
     print(course_info)
 
     error_msg_missing_value = 'Course component grades is missing for '
