@@ -34,7 +34,7 @@ There are other course grade calculators in the Python ecosystem. Some of the ex
 $ pip install gradecalculatorpy
 ```
 
-## Usage 
+## Usage
 
 ## Acknowledging the use of OS
 
