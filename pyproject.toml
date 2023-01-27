@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.9"
 pandas = "^1.5.2"
+pytest-cov = "^4.0.0"
 
 [tool.poetry.dev-dependencies]
 
