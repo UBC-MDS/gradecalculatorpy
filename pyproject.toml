@@ -1,10 +1,13 @@
 [tool.poetry]
 name = "gradecalculatorpy"
-version = "0.1.0"
+version = "0.2.0"
 description = "A python package which helps calculate grades for a course."
 authors = ["Chen Lin, Edward Zhang, Shirley Zhang"]
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/UBC-MDS/gradecalculatorpy"
+repository = "https://github.com/UBC-MDS/gradecalculatorpy"
+# documentation = 'https://gradecalculatorpy.readthedocs.io'
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -18,6 +21,7 @@ pytest = "^7.2.1"
 myst-nb = {version = "^0.17.1", python = "^3.9"}
 sphinx-autoapi = "^2.0.1"
 sphinx-rtd-theme = "^1.1.1"
+python-semantic-release = "^7.33.0"
 
 [tool.semantic_release]
 version_variable = "pyproject.toml:version" # version location
