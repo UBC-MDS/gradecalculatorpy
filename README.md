@@ -59,7 +59,7 @@ calculate_grade('dsci524.csv')
 
 ## Documentation 
 
-Please see our official documentation on Read the Docs [here]().
+Please see our official documentation on Read the Docs [here](https://gradecalculatorpy.readthedocs.io/en/latest/).
 
 ## Acknowledging the use of OS
 
