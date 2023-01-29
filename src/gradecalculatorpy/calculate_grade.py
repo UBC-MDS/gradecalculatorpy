@@ -30,12 +30,12 @@ def calculate_grade(input_file_path):
 
     error_msg_missing_value = 'Course component grades is missing for '
     error_msg_format = 'Course component grades with incorrect format (not 2 decimal places) for '
-    grade_msg = 'Course garde is '
+    grade_msg = 'Course grade is '
     percent_sign = '%'
     course_grade = 0
     return_msg = ''
 
-    # Check if all course components have garde present
+    # Check if all course components have grade present
     for i, row in course_info.iterrows():
         comp = row['Components']
         grade = row['Grades (%)'] 

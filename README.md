@@ -4,9 +4,7 @@
 
 This python package calculates grades for a course. The package allows users to customize their own course information with self-defined course component names, to update grades for different course components, and even understand how well the final exam needs to be to pass the course or achieve a target final grade.
 
-## Usage
-
-### Functions
+## Functions
 
 This package contains the following functions:
 
@@ -35,6 +33,33 @@ $ pip install gradecalculatorpy
 ```
 
 ## Usage
+
+Please see the following [Jupyter Notebook](https://github.com/UBC-MDS/gradecalculatorpy/blob/main/docs/example.ipynb) for a full walk-through of how to use `gradecalculatorpy`.
+
+```
+# import statements 
+from gradecalculatorpy.construct_course import construct_course
+from gradecalculatorpy.update_grades import update_assignment_grade
+from gradecalculatorpy.calculate_grade import calculate_grade
+from gradecalculatorpy.predict_final import predict_final
+import pandas as pd
+
+# create the grading structure of a course (follow the prompts that show up on the screen)
+construct_course('dsci524', '/')
+
+# update the grade of one component 
+update_assignment_grade('dsci524.csv', 'Milestone 1', 95.25)
+
+# find the grade needed for the final assignment if you want a target grade of 93 for the course 
+predict_final('/dsci524.csv', 93)
+
+# calculate the final grade of the course 
+calculate_grade('dsci524.csv')
+```
+
+## Documentation 
+
+Please see our official documentation on Read the Docs [here]().
 
 ## Acknowledging the use of OS
 
