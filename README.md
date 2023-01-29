@@ -55,8 +55,11 @@ predict_final('/dsci524.csv', 93)
 
 # calculate the final grade of the course 
 calculate_grade('dsci524.csv')
-
 ```
+
+## Documentation 
+
+Please see our official documentation on Read the Docs [here]().
 
 ## Acknowledging the use of OS
 
