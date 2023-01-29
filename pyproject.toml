@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gradecalculatorpy"
-version = "0.0.2"
+version = "1.0.0"
 description = "A python package which helps calculate grades for a course."
 authors = ["Chen Lin, Edward Zhang, Shirley Zhang"]
 license = "MIT"
