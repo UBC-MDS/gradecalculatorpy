@@ -47,7 +47,7 @@ def calculate_grade(input_file_path):
             return_msg = error_msg_missing_value + comp
             return return_msg
 
-        if len(str(grade).rsplit('.')[-1]) != 2:
+        if len(str(grade).rsplit('.')[-1]) > 2:
             return_msg = error_msg_format + comp
             return return_msg
 

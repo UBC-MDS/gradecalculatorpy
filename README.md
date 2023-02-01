@@ -32,6 +32,12 @@ There are other course grade calculators in the Python ecosystem. Some of the ex
 $ pip install gradecalculatorpy
 ```
 
+## Update
+
+```bash
+$ pip install --upgrade gradecalculatorpy
+```
+
 ## Usage 
 
 Please see the following [Jupyter Notebook](https://github.com/UBC-MDS/gradecalculatorpy/blob/main/docs/example.ipynb) for a full walk-through of how to use `gradecalculatorpy`.
